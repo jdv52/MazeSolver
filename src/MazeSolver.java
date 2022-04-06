@@ -34,7 +34,15 @@ public class MazeSolver {
         return Collections.emptyList();
     }
     
-    /
+    /**
+     * This method uses a breadth-first search algorithm to solve a maze defined by a Maze
+     * object.
+     *
+     * @param startX the x coordinate of the starting point
+     * @param startY the y coordinate of the starting point
+     * @param maze a Maze object containing the maze to be solved
+     * @return the list of nodes (maze cells) on the solution path
+     */
     public List<Node> solveBFS(int startX, int startY, Maze maze){
         Queue<Node> queue = new LinkedList<Node>();
         queue.add(maze.getNode(startX, startY));
