@@ -38,6 +38,8 @@ public class MazeSolver {
      * This method uses a breadth-first search algorithm to solve a maze defined by a Maze
      * object.
      *
+     * TODO: Complete implementation of this algorithm
+     *
      * @param startX the x coordinate of the starting point
      * @param startY the y coordinate of the starting point
      * @param maze a Maze object containing the maze to be solved
