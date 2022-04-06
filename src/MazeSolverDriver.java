@@ -20,15 +20,17 @@ public class MazeSolverDriver {
      * @param args command line arguments
      */
     public static void main(String[] args) throws Exception {
+        
+        // Prompt user for file name
         Scanner scnr = new Scanner(System.in);
-
         System.out.print("Please input the maze file name: ");
         String fileName = scnr.nextLine();
+        
         BufferedImage bufferImg = ImageIO.read(new File(fileName));
-
         Maze maze = new Maze(bufferImg);
         MazeSolver solver = new MazeSolver();
 
+        // Determine maze starting coordinates
         int[] startCoords = new int[2];
 
         for (int i = 0; i < maze.getHeight(); i++){
@@ -40,6 +42,7 @@ public class MazeSolverDriver {
             }
         }
 
+        // Solve maze
         System.out.println("Solving maze...");
 
         List<int[]> path = solver.solve(startCoords[0], startCoords[1], maze);
