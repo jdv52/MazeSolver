@@ -5,7 +5,20 @@ import java.io.File;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * MazeSolverDriver is the driver class for the maze solver application.
+ *
+ * @author Jayson De La Vega
+ */
 public class MazeSolverDriver {
+    
+    /**
+     * Main function prompts user for a .png maze image and cals the maze
+     * solver's solve method to solve the maze. Main then draws the solution
+     * path if the input maze is valid.
+     * 
+     * @param args command line arguments
+     */
     public static void main(String[] args) throws Exception {
         Scanner scnr = new Scanner(System.in);
 
@@ -40,6 +53,12 @@ public class MazeSolverDriver {
         System.out.println("Success!");
     }
 
+    /**
+     * Draws the path returned by the depth-first search maze solver algorithm.
+     *
+     * @ param bufferedImage the maze image in png format
+     * @ param path a list of 2x1 integer arrays containing the x and y coordinates of the solution path
+     */
     public static void drawPath1(BufferedImage bufferedImage, List<int[]> path) throws Exception{
         for (int[] coordinate : path){
             int x = coordinate[0];
