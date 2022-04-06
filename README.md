@@ -36,6 +36,7 @@ After that you're done!
 
 # TODOs
 While I don't have any plans to continue improving this project, here are some features I'd like to add:
+- Complete breadth-first search algorithm.
 - A menu that allows users to specify the kind of algorithm (breadt-first or depth-first) used to solve the maze. Currently the program's default algorithm uses depth-first search.
 - Errror-handling for invalid filenames.
 - Account for more complex mazes. E.g. program should recognize starting/ending points that are slightly different shades of green or red, walls that aren't exactly black, etc.
